@@ -1125,6 +1125,7 @@ section {
 
 .service-details .card-text {
   color: #732324;
+  text-align: justify;
 }
 
 .service-details .read-more a {

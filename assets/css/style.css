@@ -960,11 +960,11 @@ section {
 }
 
 .facts .counters p {
+  text-align: center;
   padding: 0;
   margin: 0 0 20px 0;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
-  text-align: center;
 }
 
 /*--------------------------------------------------------------

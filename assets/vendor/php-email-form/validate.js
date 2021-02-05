@@ -143,20 +143,22 @@
       }
     }).fail( function(data){
       console.log(data);
-      var error_msg = "Email enviado com sucesso!";
+      var error_msg = "Mensagem Enviada com Sucesso!" + "<br>";
       if(data.statusText || data.status) {
-        error_msg;
+        error_msg += 'Em até 48 horas entraremos em contato';
         if(data.statusText) {
-          error_msg
+          error_msg ;
         }
         if(data.status) {
-          error_msg
+          error_msg 
         }
-        error_msg
+        error_msg 
       }
       if(data.responseText) {
         error_msg 
       }
+      this_form.find('.loading').slideUp();
+      this_form.find('.error-message').slideDown().html(error_msg);
     });
   }
 

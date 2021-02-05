@@ -145,7 +145,7 @@
       console.log(data);
       var error_msg = "Mensagem Enviada com Sucesso!" + "<br>";
       if(data.statusText || data.status) {
-        error_msg += 'Em até 48 horas entraremos em contato';
+        error_msg += 'Em até 24 horas entraremos em contato';
         if(data.statusText) {
           error_msg ;
         }
